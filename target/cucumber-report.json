@@ -1,0 +1,101 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2824565500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BeforeActions.beforeAction(Scenario)"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "User should able to search in google",
+        "description": "",
+        "id": "users-ability-to-search-in-google;user-should-able-to-search-in-google;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 618207700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AfterActions.afterAction()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1730975800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Browse to Google homepage",
+            "match": {
+              "location": "GoogleHomePageSteps.browse_to_Google_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1846050800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Search by \"Car\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Car",
+                  "offset": 11
+                }
+              ],
+              "location": "GoogleHomePageSteps.search_by(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 48500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify search result appear",
+            "match": {
+              "location": "GoogleHomePageSteps.verify_search_result_appear()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 1,
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "Users ability to search in google",
+    "description": "",
+    "id": "users-ability-to-search-in-google",
+    "keyword": "Feature",
+    "uri": "googlesearch.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@regression"
+      }
+    ]
+  }
+]
